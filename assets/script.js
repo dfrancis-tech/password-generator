@@ -2,6 +2,7 @@
 
 // Character generator
 var generatePassword = function(length) {
+  var length = window.prompt("Enter the length of password.");
   // Selecting characters
   var charset = "";
   var lowCase = "abcdefghijklmnopqrstuvwxyz";
@@ -33,24 +34,29 @@ var generatePassword = function(length) {
   for (var i = 0; i < length; ++i) {
       output += charset.charAt(Math.floor(Math.random() * n));
   }
+  console.log(output);
   return output;
-}
-var length = window.prompt("Enter the length of password.");
-var password = generatePassword(length);
-console.log(password);
+
+};
+
+// Password generation starts with the click of button with id = Generate
+generate.addEventListener("click", generatePassword);
+
+// Write generated password inside textarea with class=card-body
+
 
 // Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
+// var generateBtn = document.querySelector("#generate");
 
 // Write password to the #password input
-
+/*
 function writePassword() {
   var password = generatePassword();
   var passwordText = document.querySelector("#password");
 
   passwordText.value = password;
 
-}
+}*/
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+//generateBtn.addEventListener("click", writePassword);
