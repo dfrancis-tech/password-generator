@@ -10,12 +10,12 @@ var generatePassword = function() {
   // When password length is correct
   else {
     var numOfCharTypes = 0;           // Selected number of types of character sets
-    var lowerCase = "";               // To store Lowercase alphabets if chosen
-    var upperCase = "";               // To store Uppercase alphabets if chosen
-    var numerics = "";                // To store numbers if chosen
-    var specialCharacters = "";       // To store special characters if chosen
+    var lowerCase = "";               // To store Lowercase alphabets, only if chosen
+    var upperCase = "";               // To store Uppercase alphabets, only if chosen
+    var numerics = "";                // To store numbers, only if chosen
+    var specialCharacters = "";       // To store special characters, only if chosen
     var passwordPart = "";            // Value returned from the function that picks the characters radomly
-    var output = "";                  // To link and store passwords generated as different parts
+    var output = "";                  // To link and store parts of passwords generated
     var charSet ="";                  // To store all the superset of chosen characters types
     var numberGuarenteed = 0;         // Minimun number of characters from each chosen character types
     var numberRemain = 0;             // Number of characters which can be randomly chosen from the selected set of character type
@@ -47,25 +47,25 @@ var generatePassword = function() {
 
     // Check password criteria
     // includeThis variable is reused
-    var includeThis = window.confirm("Include LOWERCASE ALPHABETS in your password\n\nClick 'OK' to include or 'Cancel' to exclude.");
+    var includeThis = window.confirm("Do you want to include LOWERCASE ALPHABETS in your password?\n\nClick 'OK' for Yes or 'Cancel' for No.");
     if (includeThis === true) {
       numOfCharTypes += 1;
       lowerCase = "abcdefghijklmnopqrstuvwxyz";
       charSet += lowerCase;
     }
-    var includeThis = window.confirm("Include UPPERCASE ALPHABETS in your password\n\nClick 'OK' to include or 'Cancel' to exclude.");
+    var includeThis = window.confirm("Do you want to include UPPERCASE ALPHABETS in your password?\n\nClick 'OK' for Yes or 'Cancel' for No.");
     if (includeThis === true) {
       numOfCharTypes += 1;
       upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
       charSet += upperCase;
     }
-    var includeThis = window.confirm("Include NUMBERS in your password\n\nClick 'OK' to include or 'Cancel' to exclude");
+    var includeThis = window.confirm("Do you want to include NUMBERS in your password?\n\nClick 'OK' for Yes or 'Cancel' for No.");
     if (includeThis === true) {
       numOfCharTypes += 1;
       numerics = "0123456789";
       charSet += numerics;
     }
-    var includeThis = window.confirm("Include SYMBOLS in your password\n\nClick 'OK' to include or 'Cancel' to exclude");
+    var includeThis = window.confirm("Do you want to include SYMBOLS in your password?\n\nClick 'OK' for Yes or 'Cancel' for No.");
     if (includeThis === true) {
       numOfCharTypes += 1;
       specialCharacters = "!\"#$%&'()*+,-./:;<=>?@[]^_`{|}~\\";
@@ -81,10 +81,10 @@ var generatePassword = function() {
     output += partialPassword(upperCase, numberGuarenteed);
     output += partialPassword(numerics, numberGuarenteed);
     output += partialPassword(specialCharacters, numberGuarenteed);
-    console.log("All characters added in equal numbers: " + output);
+    console.log("All characters are added in equal numbers: " + output);
     // Shuffle the above password part to ensure inconsistency
     output = shuffle(output);
-    console.log("Shuffled the result:" + output);
+    console.log("Shuffled the result: " + output);
     // Generate and Join the second part of password
     //console.log(remainder);
     if (numberRemain > 0) {

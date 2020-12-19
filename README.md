@@ -1,16 +1,16 @@
-# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Password Generator  
+# &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Password Generator  
 
 [Summary](#Summary) &nbsp; &nbsp; [Introduction](#Introduction) &nbsp; &nbsp; [User Story](#User-Story) &nbsp; &nbsp; [Acceptance Criteria](#Acceptance-Criteria) &nbsp; &nbsp; [Mock-Up](#Mock-up) &nbsp; &nbsp; [Code Review](#Code-Review) &nbsp; &nbsp; [Acknowledgement](#Acknowledgement)  
 
  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [***Live Project***](#Live-Project)
 
 ## Summary 
-This project is website for generating passwords.
+To create a website for employees that generates strong and secure passwords and allows character customization.
 
 ## Introduction
 The company wants to create an application that an employee can use to ***generate a random password*** based on criteria they've selected.The app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code.  
 
-IT will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes
+It will have a clean and polished user interface that is responsive, ensuring that it adapts to multiple screen sizes.
 
 ## User Story
 <details>
@@ -48,21 +48,15 @@ The following image shows the web application's appearance and functionality.
 Mock-up image: ![Mock-up image](/assets/images/mock-up.png "Mock-up image")
 
 ## Code Review
-These are the major refactorings made in the code
-      
-HTML  
-      
-CSS
 
-JavaScript
-
-    
-The completed project is uploaded in Github for approval.  
+HTML, CSS and JavaScript are used in this website. The completed project is uploaded in Github for approval.  
 Please review it in the repository link below:  
 > [https://github.com/rosefrancis-tech/password-generator](https://github.com/rosefrancis-tech/password-generator)
 
 ## Live Project
-Deployed Application url: [https://rosefrancis-tech.github.io/password-generator/](https://rosefrancis-tech.github.io/password-generator/)
+Deployed Application url: 
+> [https://rosefrancis-tech.github.io/password-generator/](https://rosefrancis-tech.github.io/password-generator/)
 
 ## Acknowledgement
 1. [Ticket Source](https://courses.bootcampspot.com/courses/484/assignments/7279?module_item_id=112568 "courses.bootcamp.com")
+2. [Shuffle Strings](https://www.codespeedy.com/shuffle-characters-of-a-string-in-javascript/ "codespeedy.com")
