@@ -40,7 +40,7 @@ var generatePassword = function() {
     }
     
     // Alert and discontinue if no character type is selected
-    if (numOfTypes = 0) {
+    if (numOfCharTypes = 0) {
       window.alert("Please select atleast one type of character for generating password.");
       return;                                                     // return when no character type is selected from prompts
     }
@@ -73,25 +73,25 @@ var generatePassword = function() {
     }
     
     // math for ensuring all selected character types are included in the generated password
-    numberGuarenteed = Math.floor(desiredLength/numOfTypes);
-    numberRemain = Math.floor(desiredLength % numOfTypes);
+    numberGuarenteed = Math.floor(desiredLength/numOfCharTypes);
+    numberRemain = Math.floor(desiredLength % numOfCharTypes);
     //console.log(quotient);
     //Generate and join the equal parts of password
     output += partialPassword(lowerCase, numberGuarenteed);
     output += partialPassword(upperCase, numberGuarenteed);
     output += partialPassword(numerics, numberGuarenteed);
     output += partialPassword(specialCharacters, numberGuarenteed);
-    console.log(output);
-    // Shuffle password part to ensure inconsistency
+    console.log("All characters added in equal numbers: " + output);
+    // Shuffle the above password part to ensure inconsistency
     output = shuffle(output);
-    console.log(output);
+    console.log("Shuffled the result:" + output);
     // Generate and Join the second part of password
     //console.log(remainder);
     if (numberRemain > 0) {
       output += partialPassword(charSet, numberRemain);
     }
     // verify result in console
-    console.log(output);
+    console.log("Remaining characters added. Full Password: " + output);
     // Write generated password inside textarea with class=card-body
     document.getElementById("password").innerHTML = output;
   }
