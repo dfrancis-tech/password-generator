@@ -51,12 +51,11 @@ Mock-up image: ![Mock-up image](/assets/images/mock-up.png "Mock-up image")
 
 HTML, CSS and JavaScript are used in this website. The completed project is uploaded in Github for approval.  
 Please review it in the repository link below:  
-> [https://github.com/rosefrancis-tech/password-generator](https://github.com/rosefrancis-tech/password-generator)
+> [https://github.com/dfrancis-tech/password-generator](https://github.com/dfrancis-tech/password-generator)
 
 ## Live Project
 Deployed Application url: 
-> [https://rosefrancis-tech.github.io/password-generator/](https://rosefrancis-tech.github.io/password-generator/)
+> [https://dfrancis-tech.github.io/password-generator/](https://dfrancis-tech.github.io/password-generator/)
 
 ## Acknowledgement
-1. [Ticket Source](https://courses.bootcampspot.com/courses/484/assignments/7279?module_item_id=112568 "courses.bootcamp.com")
-2. [Shuffle Strings](https://www.codespeedy.com/shuffle-characters-of-a-string-in-javascript/ "codespeedy.com")
+1. [Shuffle Strings](https://www.codespeedy.com/shuffle-characters-of-a-string-in-javascript/ "codespeedy.com")
